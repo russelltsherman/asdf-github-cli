@@ -35,7 +35,7 @@ install_github_cli() {
 
   echo "Downloading github-cli from ${download_url}"
   mkdir -p $bin_install_path
-  curl -sL $download_url -o $tmp_bin_path
+  curl -fsSL $download_url -o $tmp_bin_path
 
   echo "Extracting ${tmp_bin_path}"
   tar -zxf $tmp_bin_path --directory $TMPDIR
